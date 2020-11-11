@@ -1,0 +1,24 @@
+<!doctype html>
+<html lang="ru" xmlns:th="http://www.w3.org/1999/xhtml">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport"
+          content="width=device-width, user-scalable=no, initial-scale=1.0, maximum-scale=1.0, minimum-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title th:text="${title!=null}? ${title}:'Document'"></title>
+</head>
+<body>
+
+
+<form method="post">
+<select name="select">
+    <option value="XML">XML</option>
+    <option selected value="JSON">Json</option>
+    <option value="HTML">Html</option>
+</select>
+    <input type="text" name="search_box" placeholder="Search">
+    <button type="submit">Search</button>
+</form>
+
+</body>
+</html>
